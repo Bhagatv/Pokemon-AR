@@ -260,13 +260,20 @@ PlayerSettings:
   m_BuildTargetIcons: []
   m_BuildTargetBatching: []
   m_BuildTargetGraphicsAPIs: []
-  m_BuildTargetVRSettings: []
+  m_BuildTargetVRSettings:
+  - m_BuildTarget: Standalone
+    m_Enabled: 0
+    m_Devices:
+    - Oculus
+    - OpenVR
   m_BuildTargetEnableVuforiaSettings:
   - m_BuildTarget: Android
     m_Enabled: 1
   - m_BuildTarget: iOS
     m_Enabled: 1
   - m_BuildTarget: Metro
+    m_Enabled: 1
+  - m_BuildTarget: Standalone
     m_Enabled: 1
   openGLRequireES31: 0
   openGLRequireES31AEP: 0
@@ -557,9 +564,12 @@ PlayerSettings:
   webGLUseWasm: 0
   webGLCompressionFormat: 1
   scriptingDefineSymbols:
-    4: VUFORIA_IOS_SETTINGS
-    7: VUFORIA_ANDROID_SETTINGS;VUFORIA_SAMPLE_ORIENTATION_SETTINGS
-    14: VUFORIA_WSA_SETTINGS
+    1: CROSS_PLATFORM_INPUT
+    4: VUFORIA_IOS_SETTINGS;CROSS_PLATFORM_INPUT;MOBILE_INPUT
+    7: VUFORIA_ANDROID_SETTINGS;VUFORIA_SAMPLE_ORIENTATION_SETTINGS;CROSS_PLATFORM_INPUT;MOBILE_INPUT
+    14: VUFORIA_WSA_SETTINGS;MOBILE_INPUT
+    17: MOBILE_INPUT
+    20: MOBILE_INPUT
   platformArchitecture: {}
   scriptingBackend:
     Metro: 2
@@ -645,12 +655,13 @@ PlayerSettings:
     daydream:
       daydreamIconForeground: {fileID: 0}
       daydreamIconBackground: {fileID: 0}
-  cloudServicesEnabled: {}
+  cloudServicesEnabled:
+    UNet: 1
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
-  cloudProjectId: 962e54c6-d3bd-493d-8a7a-21cb60e79f2a
-  projectName: Pokemon AR (2)
-  organizationId: angela-li-24cd0b3c-0082-4a48-8f98-d141415f4cc2
+  cloudProjectId: b455c1f4-bcf8-4df1-8184-16678c1909b4
+  projectName: Pokemon AR (1)
+  organizationId: bhagatv
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
