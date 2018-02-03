@@ -44,11 +44,17 @@ MonoBehaviour:
       ContainsMagnet: 0
   databaseLoad:
     dataSetsToLoad:
+<<<<<<< HEAD
     - Image_Targets_PokeAR
     - VuforiaMars_Images
     - VuforiaMars_VuMark
     dataSetsToActivate:
     - Image_Targets_PokeAR
+=======
+    - VuforiaMars_Images
+    - VuforiaMars_VuMark
+    dataSetsToActivate:
+>>>>>>> d56bf247663320fa928e7b4b35f040c1dbf57da6
     - VuforiaMars_Images
     - VuforiaMars_VuMark
   videoBackground:
