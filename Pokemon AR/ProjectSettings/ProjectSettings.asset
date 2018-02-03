@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 14
-  productGUID: 00000000000000000000000000000000
+  productGUID: 9bc8b4c8f132d504eaf7791bd0eacd6a
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   defaultScreenOrientation: 0
@@ -648,7 +648,7 @@ PlayerSettings:
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
   cloudProjectId: 962e54c6-d3bd-493d-8a7a-21cb60e79f2a
-  projectName: 
+  projectName: Pokemon AR (2)
   organizationId: angela-li-24cd0b3c-0082-4a48-8f98-d141415f4cc2
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
