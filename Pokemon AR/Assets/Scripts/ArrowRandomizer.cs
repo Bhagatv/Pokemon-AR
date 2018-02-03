@@ -20,7 +20,6 @@ public class ArrowRandomizer : MonoBehaviour {
     {
         for (int i = 0; i < 30; i++)
         {
-            r.Next();
             arrows[i] = Random.Range(0, 3);
         }
         return arrows;
