@@ -16,8 +16,13 @@ MonoBehaviour:
     ufoLicenseKey: QWJhUjNKdi8vLy8vQUFBQUtFZU0xK3M3SDA1bHR2MDBJcGZmcDF4cmo3MG9IMG5iUTNheWpHZisyYkxsRHcvRnp2VG1tUVM1MytuOVlZS1RUc2dXeHhhYUVDOWJ6MmYwOHVnOHkzUlMrYVQ5OFAyakN2dUZ4dlJFZEpKSXd6MlY3N0M0Y0JWbTUzVVppMFdOQVBXLy92OXVMbjBMb3d4ODBxcXNxMGlqL2JGb3FmQ2Q1Vnd6VCtQTm9SbmVmSzQxSDRBZE9jRVkyckZCMXVPbTJ2UzVkSWtmK3doMFZZdFBpMWRGNU1TSytxNHIyMFFXWExONkNXTHpyNHlZeXA2dDNBL2hORjZEaUlmbGVHQm90MFlwajYvT2dkREJnVUljUW9aQ0FVMCtoZUp0TTh0SGhHRmNhcU52bnRyenF5dFNlbjVWK2tkUVQxSVF0czdYU0MycW5LTFV6NnhMSzNLNFJQK01oUEVvRVJaM2I0V2ZVMWdyV0k4VU8rQTU=
     delayedInitialization: 0
     cameraDeviceModeSetting: -1
+<<<<<<< HEAD
+    maxSimultaneousImageTargets: 4
+    maxSimultaneousObjectTargets: 4
+=======
     maxSimultaneousImageTargets: 2
     maxSimultaneousObjectTargets: 2
+>>>>>>> a6888a32f08890cd849aae7c3dbbee612751e8dc
     useDelayedLoadingObjectTargets: 0
     cameraDirection: 0
     mirrorVideoBackground: 0
@@ -44,13 +49,40 @@ MonoBehaviour:
       ContainsMagnet: 0
   databaseLoad:
     dataSetsToLoad:
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 1703cac7b5729f11d8a659fd00142e859a0a77ce
+>>>>>>> 22b1235b80fe113600abfc0d2ae6be7df6d513c9
     - Image_Targets_PokeAR
+>>>>>>> a6888a32f08890cd849aae7c3dbbee612751e8dc
+    - VuforiaMars_Images
+    - VuforiaMars_VuMark
+    - PokemonCard
+    - Image_Targets_PokeAR
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    dataSetsToActivate:
+=======
+<<<<<<< HEAD
+=======
+=======
     - VuforiaMars_Images
     - VuforiaMars_VuMark
     dataSetsToActivate:
-    - Image_Targets_PokeAR
+>>>>>>> d56bf247663320fa928e7b4b35f040c1dbf57da6
+>>>>>>> 1703cac7b5729f11d8a659fd00142e859a0a77ce
+>>>>>>> a6888a32f08890cd849aae7c3dbbee612751e8dc
+>>>>>>> 22b1235b80fe113600abfc0d2ae6be7df6d513c9
     - VuforiaMars_Images
     - VuforiaMars_VuMark
+    - PokemonCard
+    - Image_Targets_PokeAR
   videoBackground:
     clippingMode: 0
     numDivisions: 2
