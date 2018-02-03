@@ -5,21 +5,21 @@ using UnityEngine;
 public class ChangeSprite : MonoBehaviour
 {
     public Sprite arrowNorth, arrowEast, arrowSouth, arrowWest;
-    int[] arrows = new int[30];
+    public bool gameIsOver = true;
+
     int arrow;
-    public bool isBusy = false;
+    int num_losses = 0;
+    int num_wins = 0;
 
     public int index = 0;
     // Use this for initialization
     void Start()
     {
-        arrows = RandomizeArrows(arrows);
     }
-
 
     IEnumerator Wait(int arrow)
     {
-        isBusy = true;
+        gameIsOver = true;
         if (arrow == 0)
         {
             this.GetComponent<SpriteRenderer>().sprite = arrowNorth;
@@ -49,37 +49,30 @@ public class ChangeSprite : MonoBehaviour
             this.GetComponent<SpriteRenderer>().color = Color.black;
         }
         yield return new WaitForSeconds(1);
-        isBusy = false;
+        gameIsOver = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (!isBusy)
+        if (!gameIsOver)
         {
             arrow = Random.Range(0, 4);
             Debug.Log(arrow);
             StartCoroutine(Wait(arrow));
+            gameIsOver = IsGameOver();
         }
     }
 
-    void ArrowsMoving()
+    bool IsGameOver()
     {
-        int idx = 0;
-        while (index < 30)
-        {
-            Debug.Log(arrows[idx]);
-            StartCoroutine(Wait(arrows[idx]));
-            idx++;
-        }
+        if (num_losses >= 10)
+            return true;
+        if (num_wins >= 3)
+            return true;
+        else
+            return false;
     }
 
-    public int[] RandomizeArrows(int[] arrows)
-    {
-        for (int i = 0; i < 30; i++)
-        {
-            arrows[i] = Random.Range(0, 4);
-        }
-        return arrows;
-    }
+
 }
