@@ -8,11 +8,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -2067402452, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
+  m_Script: {fileID: -2067402452, guid: bab6fa851cf5a1a4bba3cec5f191cb8e, type: 3}
   m_Name: VuforiaConfiguration
   m_EditorClassIdentifier: 
   vuforia:
-    vuforiaLicenseKey: AUS3k63/////AAAAmWxkdOvQME5YtU86KaZyIb5WGwhGtSw9v2JWByy9399bW4dWBa3dflauT0imcyxLi1by83Eip4xwRhP05pb8ApRoU609a8/vcpNlPJxZRawTkXoVevJvEQQqLouOiHBQxNqC03YX+7AWAX8nBUK2RLc3a+NgvO2J2dJAmeP6XYAxOv/VfObhcpuXN7GP3a1WdihXIDaEYhp/qlXRb/1XCzCePPyNW9c+tpcG6IPOjGS8/6CPJBTC9xlUltpRymQFI9P8cCOadMUKjxEukcfFwP3BUAErsO5fg3/L17pFAq8POjrqJb7hlj4dJf3l/OexTgnWCcZPtzrV9JzKxzuvjv2d/XxQcmGCGU6fq8lIgG5m
+    vuforiaLicenseKey: 
     ufoLicenseKey: QWJhUjNKdi8vLy8vQUFBQUtFZU0xK3M3SDA1bHR2MDBJcGZmcDF4cmo3MG9IMG5iUTNheWpHZisyYkxsRHcvRnp2VG1tUVM1MytuOVlZS1RUc2dXeHhhYUVDOWJ6MmYwOHVnOHkzUlMrYVQ5OFAyakN2dUZ4dlJFZEpKSXd6MlY3N0M0Y0JWbTUzVVppMFdOQVBXLy92OXVMbjBMb3d4ODBxcXNxMGlqL2JGb3FmQ2Q1Vnd6VCtQTm9SbmVmSzQxSDRBZE9jRVkyckZCMXVPbTJ2UzVkSWtmK3doMFZZdFBpMWRGNU1TSytxNHIyMFFXWExONkNXTHpyNHlZeXA2dDNBL2hORjZEaUlmbGVHQm90MFlwajYvT2dkREJnVUljUW9aQ0FVMCtoZUp0TTh0SGhHRmNhcU52bnRyenF5dFNlbjVWK2tkUVQxSVF0czdYU0MycW5LTFV6NnhMSzNLNFJQK01oUEVvRVJaM2I0V2ZVMWdyV0k4VU8rQTU=
     delayedInitialization: 0
     cameraDeviceModeSetting: -1
@@ -44,18 +44,10 @@ MonoBehaviour:
       ContainsMagnet: 0
   databaseLoad:
     dataSetsToLoad:
-<<<<<<< HEAD
-    - PokemonCard
-=======
->>>>>>> e7d500913d0fcf02614ea91908c361dddb23258c
     - Image_Targets_PokeAR
     - VuforiaMars_Images
     - VuforiaMars_VuMark
     dataSetsToActivate:
-<<<<<<< HEAD
-    - PokemonCard
-=======
->>>>>>> e7d500913d0fcf02614ea91908c361dddb23258c
     - Image_Targets_PokeAR
     - VuforiaMars_Images
     - VuforiaMars_VuMark
