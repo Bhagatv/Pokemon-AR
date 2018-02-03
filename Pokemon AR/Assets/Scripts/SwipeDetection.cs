@@ -9,7 +9,7 @@ public class SwipeDetection : MonoBehaviour {
 	public float minSwipeDistance;
 	public float errorRange;
 
-	public SwipeDetection direction = SwipeDirection.None;
+	public SwipeDirection direction = SwipeDirection.None;
 
 	public enum SwipeDirection {Right, Left, Up, Down, None};
 
