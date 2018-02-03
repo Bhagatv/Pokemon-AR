@@ -15,27 +15,20 @@ public class SwipeDetection : MonoBehaviour
 	public enum Swipe { None, Up, Down, Left, Right };
 	public Transform Parent;
 	public bool currentlySwiping = false;
-	public Vector3 jumpDistance;
-	public float jumpForce = 2.0f;
-	public bool isGrounded;
-	Rigidbody rb;
+	public int direction = 5;
+	public bool hasBeenSwiped = false;
+
 
 
 	void Start()
 	{
-		rb = GetComponentInParent<Rigidbody> ();
-		jumpDistance = new Vector3 (0.0f, 2.0f, 0.0f);
+		
 	}
 
 	void Update ()
 	{
 		DetectSwipe();
 
-	}
-
-	void OnCollsionStay()
-	{
-		isGrounded = true;
 	}
 
 	public void DetectSwipe ()
@@ -55,21 +48,24 @@ public class SwipeDetection : MonoBehaviour
 
 			if (deltaSwipe.x > -0.5f && deltaSwipe.y > 0 && deltaSwipe.x < 0.5f && currentlySwiping) {
 				Debug.Log ("up");
-				rb.AddForce (jumpDistance * jumpForce, ForceMode.Impulse);
-				isGrounded = false;
+				direction = 0;
+				hasBeenSwiped = true;
 
 			}
 			if (deltaSwipe.x > -0.5f && deltaSwipe.y < 0 && deltaSwipe.x < 0.5f && currentlySwiping) {
 				Debug.Log ("down");
-
+				direction = 2;
+				hasBeenSwiped = true;
 			}
 			if (deltaSwipe.x < 0 && deltaSwipe.y > -0.5f && deltaSwipe.y < 0.5f && currentlySwiping) {
 				Debug.Log ("left");
-
+				direction = 3;
+				hasBeenSwiped = true;
 			}
 			if (deltaSwipe.x > 0 && deltaSwipe.y > -0.5f && deltaSwipe.y < 0.5f && currentlySwiping) {
 				Debug.Log ("right");
-
+				direction = 1;
+				hasBeenSwiped = true;
 			}
 
 
