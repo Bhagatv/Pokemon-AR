@@ -12,21 +12,12 @@ MonoBehaviour:
   m_Name: VuforiaConfiguration
   m_EditorClassIdentifier: 
   vuforia:
-<<<<<<< HEAD
     vuforiaLicenseKey: AUS3k63/////AAAAmWxkdOvQME5YtU86KaZyIb5WGwhGtSw9v2JWByy9399bW4dWBa3dflauT0imcyxLi1by83Eip4xwRhP05pb8ApRoU609a8/vcpNlPJxZRawTkXoVevJvEQQqLouOiHBQxNqC03YX+7AWAX8nBUK2RLc3a+NgvO2J2dJAmeP6XYAxOv/VfObhcpuXN7GP3a1WdihXIDaEYhp/qlXRb/1XCzCePPyNW9c+tpcG6IPOjGS8/6CPJBTC9xlUltpRymQFI9P8cCOadMUKjxEukcfFwP3BUAErsO5fg3/L17pFAq8POjrqJb7hlj4dJf3l/OexTgnWCcZPtzrV9JzKxzuvjv2d/XxQcmGCGU6fq8lIgG5m
-    ufoLicenseKey: QWVjMnRTei8vLy8vQUFBQUtFTjNESmt1VVV4TnV3SnNydkRDWkRFcTJoZkd1Z1hyY0F4ZUplRG1zUkZDanFXeEVTbnROTDhlWUF4Sk5EeTNFZm5kVWJURmswck9VakVKMzB0YXVIM3h5SkFXVWkwb2dxT0tlRHZYMkI4RTVBRVo1K3Urb2JKSlBiSEo4MzN4aElWUW5rVDJHdVh2cDZSb0dHN1NPRHRBajNDUGlTQjB3WHV3MzdrOGxJRWxZTG5iOHRBWVlMZnpFMjFEQnNSWTM4OVhVRmVjbUZIanJQRUQ2cEdoaFNRWXcvU0lTbWdvVXBXZ3V2MHhGbWNvZFFkOGF4WFJEKzJ4MGZVV1p4V25RNC9lbWRkdG0xVXdGdzNJMDZ1TWxFS0piRGJVL1hLbDFWNWNIM0lwV1pjUTU5NjBsUUNlK05sQTdPOGk2Y0NuRkQ0TGRjd1JlTTJFZUZxUEJPblRyL3R0b055VFF3NU1JZE5UTkFsZlo0Tzk=
-    delayedInitialization: 0
-    cameraDeviceModeSetting: -1
-    maxSimultaneousImageTargets: 4
-    maxSimultaneousObjectTargets: 4
-=======
-    vuforiaLicenseKey: 
-    ufoLicenseKey: QWFHYnFwbi8vLy8vQUFBQUtBREhuVVBnZlVQOXVwOGpPVnhpb2VzUUQ4L2pZUlpGWFArZDNBaTNXeDYyM1N0THNrbkdueHlFOHRNRE5XeVFiMzJUSmIyWkd1aUtuLzdaZVNpL2pSMHZNcldhUTY0NFRHUUE2elFvQ3Y3WU1kNnFCMnNjWW43MVZRK0M5elFYa1dObmtRSi9lQ25VYVNuaE4vei9NalhaRmdsQUFFc0drMUgvSnExNWs4T01CUjlpaHRpQTdaaEN5b3YxWnBVOUdMck1KSk11S2l6ZStpenFxdmkzNFZtYkFUeGRnbmFhdlM2NEJ3d0xVS01UREE1RDhNSStIS0pUZGNhMmYvRXZBempwbHdUU0RIRHJXWHYzM2NuQTVKSW51QTl3VFFDeFJEaFk1dXk2SlIzbmpHL0JGTVdrVGRGZk1vS1kycWozRlVLUmQ4R0pHUVR1U01YZ1MxQVRUSnBmSDBiVEUreTVkY3hxUzVQZmZRdS8=
+    ufoLicenseKey: QVEvbndmYi8vLy8vQUFBQUtNb1ljd3RrMkV1MWtJdzBEWnB2dGx0d0ppaHNPdkFsdmx3YVY3RFhQZHoxN1Rpb3ZhRTgwUjAwVzhpaWRIL2w5VDhhWlQvNFd6WloweWRxcWZqUzRlUVY1Ylh4ZlhQREQ1eFYyYmd2MXltK3NkeWdFNTdHTEZDZGdjNkYxZTdjRWRrZjhva1I2dHdrY05EczVzYnZBcmJ3aHZjWVJPOGlxLzNHMG9zcXJsL2Z6NFlmTi9XQ3hJSms3cDFWWnIxN1VtZ1JsVGkxWDlTakxUbmk1ZmtZajlBTkI1MUd6Q0xsb0UzU0I3Nm1vUnRRVnpVUWdyU2JwWE5qZ3lSTUFZdUNOWEwzNWhzU09Lc0RaUHF1bXN2UllMeXM2a1ZyRERJcVJCQVltbzBPU2k4UkhCWk5xUnR4ekhrdXYveU5jWkFDeFQyNmwwMkltdXQyMU5mbDl0eFE3b3R5SFdzdi81SGdJRjNzUnFGZmZhSGI=
     delayedInitialization: 0
     cameraDeviceModeSetting: -1
     maxSimultaneousImageTargets: 1
     maxSimultaneousObjectTargets: 1
->>>>>>> d1eca9376295ceff0cd208e9cc506c8ecd66dcc3
     useDelayedLoadingObjectTargets: 0
     cameraDirection: 0
     mirrorVideoBackground: 0
@@ -53,7 +44,6 @@ MonoBehaviour:
       ContainsMagnet: 0
   databaseLoad:
     dataSetsToLoad:
-<<<<<<< HEAD
     - Image_Targets_PokeAR
     - VuforiaMars_Images
     - VuforiaMars_VuMark
@@ -61,13 +51,6 @@ MonoBehaviour:
     - Image_Targets_PokeAR
     - VuforiaMars_Images
     - VuforiaMars_VuMark
-=======
-    - VuforiaMars_Images
-    - VuforiaMars_VuMark
-    dataSetsToActivate:
-    - VuforiaMars_Images
-    - VuforiaMars_VuMark
->>>>>>> d1eca9376295ceff0cd208e9cc506c8ecd66dcc3
   videoBackground:
     clippingMode: 0
     numDivisions: 2
