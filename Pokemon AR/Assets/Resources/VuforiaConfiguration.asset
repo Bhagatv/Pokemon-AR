@@ -27,8 +27,8 @@ MonoBehaviour:
     eyewearType: 0
     stereoFramework: 0
     seeThroughConfiguration: 0
-    viewerName: 
-    viewerManufacturer: 
+    viewerName: Generic Cardboard
+    viewerManufacturer: Vuforia
     useCustomViewer: 0
     customViewer:
       Version: 0
@@ -44,23 +44,11 @@ MonoBehaviour:
       ContainsMagnet: 0
   databaseLoad:
     dataSetsToLoad:
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 1703cac7b5729f11d8a659fd00142e859a0a77ce
     - Image_Targets_PokeAR
     - VuforiaMars_Images
     - VuforiaMars_VuMark
     dataSetsToActivate:
     - Image_Targets_PokeAR
-<<<<<<< HEAD
-=======
-=======
-    - VuforiaMars_Images
-    - VuforiaMars_VuMark
-    dataSetsToActivate:
->>>>>>> d56bf247663320fa928e7b4b35f040c1dbf57da6
->>>>>>> 1703cac7b5729f11d8a659fd00142e859a0a77ce
     - VuforiaMars_Images
     - VuforiaMars_VuMark
   videoBackground:
