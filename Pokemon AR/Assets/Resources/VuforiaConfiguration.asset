@@ -13,16 +13,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vuforia:
     vuforiaLicenseKey: AUS3k63/////AAAAmWxkdOvQME5YtU86KaZyIb5WGwhGtSw9v2JWByy9399bW4dWBa3dflauT0imcyxLi1by83Eip4xwRhP05pb8ApRoU609a8/vcpNlPJxZRawTkXoVevJvEQQqLouOiHBQxNqC03YX+7AWAX8nBUK2RLc3a+NgvO2J2dJAmeP6XYAxOv/VfObhcpuXN7GP3a1WdihXIDaEYhp/qlXRb/1XCzCePPyNW9c+tpcG6IPOjGS8/6CPJBTC9xlUltpRymQFI9P8cCOadMUKjxEukcfFwP3BUAErsO5fg3/L17pFAq8POjrqJb7hlj4dJf3l/OexTgnWCcZPtzrV9JzKxzuvjv2d/XxQcmGCGU6fq8lIgG5m
-    ufoLicenseKey: QWJhUjNKdi8vLy8vQUFBQUtFZU0xK3M3SDA1bHR2MDBJcGZmcDF4cmo3MG9IMG5iUTNheWpHZisyYkxsRHcvRnp2VG1tUVM1MytuOVlZS1RUc2dXeHhhYUVDOWJ6MmYwOHVnOHkzUlMrYVQ5OFAyakN2dUZ4dlJFZEpKSXd6MlY3N0M0Y0JWbTUzVVppMFdOQVBXLy92OXVMbjBMb3d4ODBxcXNxMGlqL2JGb3FmQ2Q1Vnd6VCtQTm9SbmVmSzQxSDRBZE9jRVkyckZCMXVPbTJ2UzVkSWtmK3doMFZZdFBpMWRGNU1TSytxNHIyMFFXWExONkNXTHpyNHlZeXA2dDNBL2hORjZEaUlmbGVHQm90MFlwajYvT2dkREJnVUljUW9aQ0FVMCtoZUp0TTh0SGhHRmNhcU52bnRyenF5dFNlbjVWK2tkUVQxSVF0czdYU0MycW5LTFV6NnhMSzNLNFJQK01oUEVvRVJaM2I0V2ZVMWdyV0k4VU8rQTU=
+    ufoLicenseKey: QWVjMnRTei8vLy8vQUFBQUtFTjNESmt1VVV4TnV3SnNydkRDWkRFcTJoZkd1Z1hyY0F4ZUplRG1zUkZDanFXeEVTbnROTDhlWUF4Sk5EeTNFZm5kVWJURmswck9VakVKMzB0YXVIM3h5SkFXVWkwb2dxT0tlRHZYMkI4RTVBRVo1K3Urb2JKSlBiSEo4MzN4aElWUW5rVDJHdVh2cDZSb0dHN1NPRHRBajNDUGlTQjB3WHV3MzdrOGxJRWxZTG5iOHRBWVlMZnpFMjFEQnNSWTM4OVhVRmVjbUZIanJQRUQ2cEdoaFNRWXcvU0lTbWdvVXBXZ3V2MHhGbWNvZFFkOGF4WFJEKzJ4MGZVV1p4V25RNC9lbWRkdG0xVXdGdzNJMDZ1TWxFS0piRGJVL1hLbDFWNWNIM0lwV1pjUTU5NjBsUUNlK05sQTdPOGk2Y0NuRkQ0TGRjd1JlTTJFZUZxUEJPblRyL3R0b055VFF3NU1JZE5UTkFsZlo0Tzk=
     delayedInitialization: 0
     cameraDeviceModeSetting: -1
-<<<<<<< HEAD
     maxSimultaneousImageTargets: 4
     maxSimultaneousObjectTargets: 4
-=======
-    maxSimultaneousImageTargets: 2
-    maxSimultaneousObjectTargets: 2
->>>>>>> a6888a32f08890cd849aae7c3dbbee612751e8dc
     useDelayedLoadingObjectTargets: 0
     cameraDirection: 0
     mirrorVideoBackground: 0
@@ -49,34 +44,13 @@ MonoBehaviour:
       ContainsMagnet: 0
   databaseLoad:
     dataSetsToLoad:
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 1703cac7b5729f11d8a659fd00142e859a0a77ce
     - Image_Targets_PokeAR
->>>>>>> a6888a32f08890cd849aae7c3dbbee612751e8dc
-    - VuforiaMars_Images
-    - VuforiaMars_VuMark
-    - PokemonCard
-    - Image_Targets_PokeAR
-<<<<<<< HEAD
-    dataSetsToActivate:
-=======
-<<<<<<< HEAD
-=======
-=======
     - VuforiaMars_Images
     - VuforiaMars_VuMark
     dataSetsToActivate:
->>>>>>> d56bf247663320fa928e7b4b35f040c1dbf57da6
->>>>>>> 1703cac7b5729f11d8a659fd00142e859a0a77ce
->>>>>>> a6888a32f08890cd849aae7c3dbbee612751e8dc
+    - Image_Targets_PokeAR
     - VuforiaMars_Images
     - VuforiaMars_VuMark
-    - PokemonCard
-    - Image_Targets_PokeAR
   videoBackground:
     clippingMode: 0
     numDivisions: 2
