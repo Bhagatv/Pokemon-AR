@@ -4,16 +4,31 @@ using UnityEngine;
 
 public class ArrowRandomizer : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-        int[] arrows = new int[30];
+    int[] arrows = new int[30];
+    //public GameObject arrow;
+
+    // Use this for initialization
+    void Start ()
+    {
         arrows = RandomizeArrows(arrows);
-		
+        ArrowsMoving();
 	}
+
+    IEnumerator Wait()
+    {
+        transform.Translate(Vector3.right * 10 * Time.deltaTime);
+        yield return new WaitForSeconds(2);
+    }
+
+    void ArrowsMoving()
+    {
+        StartCoroutine(Wait());
+    }
 	
 	// Update is called once per frame
-	void Update () {
-		
+	void Update ()
+    {
+
 	}
 
     public int[] RandomizeArrows (int[] arrows)
