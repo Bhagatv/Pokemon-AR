@@ -12,8 +12,13 @@ MonoBehaviour:
   m_Name: VuforiaConfiguration
   m_EditorClassIdentifier: 
   vuforia:
+<<<<<<< HEAD
     vuforiaLicenseKey: AUS3k63/////AAAAmWxkdOvQME5YtU86KaZyIb5WGwhGtSw9v2JWByy9399bW4dWBa3dflauT0imcyxLi1by83Eip4xwRhP05pb8ApRoU609a8/vcpNlPJxZRawTkXoVevJvEQQqLouOiHBQxNqC03YX+7AWAX8nBUK2RLc3a+NgvO2J2dJAmeP6XYAxOv/VfObhcpuXN7GP3a1WdihXIDaEYhp/qlXRb/1XCzCePPyNW9c+tpcG6IPOjGS8/6CPJBTC9xlUltpRymQFI9P8cCOadMUKjxEukcfFwP3BUAErsO5fg3/L17pFAq8POjrqJb7hlj4dJf3l/OexTgnWCcZPtzrV9JzKxzuvjv2d/XxQcmGCGU6fq8lIgG5m
     ufoLicenseKey: QVEvbndmYi8vLy8vQUFBQUtNb1ljd3RrMkV1MWtJdzBEWnB2dGx0d0ppaHNPdkFsdmx3YVY3RFhQZHoxN1Rpb3ZhRTgwUjAwVzhpaWRIL2w5VDhhWlQvNFd6WloweWRxcWZqUzRlUVY1Ylh4ZlhQREQ1eFYyYmd2MXltK3NkeWdFNTdHTEZDZGdjNkYxZTdjRWRrZjhva1I2dHdrY05EczVzYnZBcmJ3aHZjWVJPOGlxLzNHMG9zcXJsL2Z6NFlmTi9XQ3hJSms3cDFWWnIxN1VtZ1JsVGkxWDlTakxUbmk1ZmtZajlBTkI1MUd6Q0xsb0UzU0I3Nm1vUnRRVnpVUWdyU2JwWE5qZ3lSTUFZdUNOWEwzNWhzU09Lc0RaUHF1bXN2UllMeXM2a1ZyRERJcVJCQVltbzBPU2k4UkhCWk5xUnR4ekhrdXYveU5jWkFDeFQyNmwwMkltdXQyMU5mbDl0eFE3b3R5SFdzdi81SGdJRjNzUnFGZmZhSGI=
+=======
+    vuforiaLicenseKey: 
+    ufoLicenseKey: QVFlekZtdi8vLy8vQUFBQUtEN0hZSHdXNEVKQ3VibzY4UWhVcncyUW5nU2dTTlR3ZVVqOTZWNklKV3FXYXQrWW04cStma2tiSFZVc3pBYUdMWm56L2crbWtKRjZlVTNDN1NpNklqWGNaNCt1dzZzSHRzWFhhanF3Ylo0MDc1cGUwWmIyaVhKanhOYTBIQmpFK25xb1RMdzFtT1VJazFPc1pXQVZxb3NqM2FMbUFTNUd0ZHhxaHREcTNSczA3c0o1YTdOcjBOcHBwR0h3VXR3eVlvcG5TMHdzdUwxdlU0Z3l4UG8vdHh5eTZuamtFUG9kQ1BRZ08yaS9TdjVrRk83ZEU2RTA4L0YyWHFhcmlDdDBwTkNkZUc2aDYrTW9RWHByMWdjQitjVi9HRHl6bUs0THpHUG1tMmZsMlFoTWR5ZUFNRENVbjdlbGNLb2loZWsxMmppdUxvaDgrMXViUEREVEppK1o5eDUvZ1RtL0dSdkpYR3BBUnExbERhZlA=
+>>>>>>> feed181260aedf1e82e02919d6f8d17e0c5aed44
     delayedInitialization: 0
     cameraDeviceModeSetting: -1
     maxSimultaneousImageTargets: 1
@@ -44,11 +49,17 @@ MonoBehaviour:
       ContainsMagnet: 0
   databaseLoad:
     dataSetsToLoad:
+<<<<<<< HEAD
     - Image_Targets_PokeAR
     - VuforiaMars_Images
     - VuforiaMars_VuMark
     dataSetsToActivate:
     - Image_Targets_PokeAR
+=======
+    - VuforiaMars_Images
+    - VuforiaMars_VuMark
+    dataSetsToActivate:
+>>>>>>> feed181260aedf1e82e02919d6f8d17e0c5aed44
     - VuforiaMars_Images
     - VuforiaMars_VuMark
   videoBackground:

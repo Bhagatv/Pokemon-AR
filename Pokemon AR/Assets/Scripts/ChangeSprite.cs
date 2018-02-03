@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class ChangeSprite : MonoBehaviour {
     public Sprite arrowNorth, arrowEast, arrowSouth, arrowWest;
+<<<<<<< HEAD
+=======
+    int[] arrows = new int[30];
+	int arrow;
+
+>>>>>>> feed181260aedf1e82e02919d6f8d17e0c5aed44
     public int index = 0;
     public bool increaseIndex = false;
 
@@ -11,19 +17,31 @@ public class ChangeSprite : MonoBehaviour {
     // Use this for initialization
     void Start ()
     {
-        arrows = RandomizeArrows(arrows);
+        
     }
 
     // Update is called once per frame
     void Update ()
     {
+<<<<<<< HEAD
         if (increaseIndex == true)
             ArrowsMoving();
+=======
+        
+		arrow = Random.Range (0, 4);
+      	Debug.Log(arrow);
+        StartCoroutine(Wait(arrow));
+        
+>>>>>>> feed181260aedf1e82e02919d6f8d17e0c5aed44
     }
 
     IEnumerator Wait(int arrow)
     {
         yield return new WaitForSeconds(5.0f);
+<<<<<<< HEAD
+=======
+        
+>>>>>>> feed181260aedf1e82e02919d6f8d17e0c5aed44
         if (arrow == 0)
         {
             Debug.Log("Changing to north");
