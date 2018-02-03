@@ -5,29 +5,29 @@ using UnityEngine;
 public class ChangeSprite : MonoBehaviour {
     public Sprite arrowNorth, arrowEast, arrowSouth, arrowWest;
     int[] arrows = new int[30];
+	int arrow;
 
     public int index = 0;
     // Use this for initialization
     void Start ()
     {
-        arrows = RandomizeArrows(arrows);
+        
     }
 
     // Update is called once per frame
     void Update ()
     {
         
-        while (index < 30)
-        {
-            Debug.Log(arrows[index]);
-            StartCoroutine(Wait(arrows[index]));
-        }
+		arrow = Random.Range (0, 4);
+      	Debug.Log(arrow);
+        StartCoroutine(Wait(arrow));
+        
     }
 
     IEnumerator Wait(int arrow)
     {
         yield return new WaitForSeconds(5.0f);
-        index++;
+        
         if (arrow == 0)
         {
            this.GetComponent<SpriteRenderer>().sprite = arrowNorth;
