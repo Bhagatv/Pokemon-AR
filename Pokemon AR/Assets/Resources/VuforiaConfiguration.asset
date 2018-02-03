@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Name: VuforiaConfiguration
   m_EditorClassIdentifier: 
   vuforia:
-    vuforiaLicenseKey: 
+    vuforiaLicenseKey: AVM6rRf/////AAAAmbHS/eothkk6sD7phH2DewdVQfroiCE0FXborNsQZ2IyfAk7JQDXl+N8WysNQ+ym0YatT/YNNvvZfQmU/g3RLa2jucdfhsjSysmdgcXgOnrKBmh9/k215ZdJ4rAjP2dqDxJvG/pQsZko2wXL0PoMkSxuCsrhHPQETU0jgOd3LSjAewOFvaYPkOtUJ4ia7AEAs6B0Nu8m1krwht69m7SVJyglYDBbhqirWzEw4JPA2iIhE3BpKM9JqBWbZaBab3JyLlF4FBA7YikvLtN5ANLNyW0EjGZZRFzz8CCbotZsKwzznpwH6/P8QAJojyBIK47c27B0bXAfyytQVTOxUJfPmXWOK1dZn4QWtIoYv/DnDb03
     ufoLicenseKey: QVptSVVkVC8vLy8vQUFBQUtDSzJ4LzJCOGtweWlZZzhHQUtDekdON0tPYjFHOUFsY2pGK1hyakdmVlpDdy9FK0FVN0xGeTRHcVpEVGRlN3V1TTlYNUJPL2RVM0MrRlMwVVphOGhtZ1pDc3EyejhlbXFTK3h3azgxWTZyNlpJbGFEN1ZSNjBTVVlXZUZqdDNHb0EwWkkvTnNYZVc3VUJHSktzbnRRcll0VURaeUV1Z3JWWTZHR1FvRjdTV3pYVFFHYWxhV3FJR2RkcTAwRXpDUTNoaEJiYXpCS2xiQUMyNHAzeGV2ZmpjditvSkZxcXVEVi8zOFR6eDI3cnE5N05NUW5PMmtic25IZzE2QnlhYlFpdVBUUERMdU5VY3k2dUlxTGF4NUlEOGNoeGprNm9MaTZkRVNoL2JGak9TTHBJc1dmWHU1bnRhTkdwNlpVRTlsYkJEZ2plRkN3bWtrSXZnNlBKb2pldE5xY09OTnRCOUd4Q0lGdlJ1Q3lkVzM=
     delayedInitialization: 0
     cameraDeviceModeSetting: -1
     maxSimultaneousImageTargets: 4
     maxSimultaneousObjectTargets: 1
-    useDelayedLoadingObjectTargets: 0
+    useDelayedLoadingObjectTargets: 1
     cameraDirection: 0
     mirrorVideoBackground: 0
   digitalEyewear:
@@ -43,8 +43,14 @@ MonoBehaviour:
       FieldOfView: {x: 0, y: 0, z: 0, w: 0}
       ContainsMagnet: 0
   databaseLoad:
-    dataSetsToLoad: []
-    dataSetsToActivate: []
+    dataSetsToLoad:
+    - PokemonCard
+    - VuforiaMars_Images
+    - VuforiaMars_VuMark
+    dataSetsToActivate:
+    - PokemonCard
+    - VuforiaMars_Images
+    - VuforiaMars_VuMark
   videoBackground:
     clippingMode: 0
     numDivisions: 2
