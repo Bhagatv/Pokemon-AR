@@ -2,46 +2,76 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-public class BulbScript : MonoBehaviour {
-   // public Button bulletSeedButton;
+public class BulbScript : MonoBehaviour
+{
+    // public Button bulletSeedButton;
     //public GameObject spawnPoint;
     public GameObject bulletSeed;
     public Slider healthbar;
     public GameObject explosion;
     //public GameObject temp = GameObject.Find("Slider");
+
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
         //bulletSeedButton.onClick.AddListener(onBulbButton);
         bulletSeed.transform.gameObject.SetActive(false);
+        explosion.transform.gameObject.SetActive(false);
+        // explosion.SetActive(false);
         StartCoroutine(Wait());
     }
     IEnumerator Wait()
     {
-        int health = 100;
-       while(health != 0)
+
+
+        while (healthbar.value > 0) //will check if true)
         {
-<<<<<<< HEAD
-           // temp.GetComponent<Slider>().value = health;
-=======
- //           temp.GetComponent<Slider>().value = health;
->>>>>>> 17dc443c01cb04915e9038ef384644f2a2cd7f3b
-            yield return new WaitForSeconds(2);
-            bulletSeed.transform.gameObject.SetActive(true);
+            bool bulb = GameObject.Find("ImageTarget (1)").GetComponent<DefaultTrackableEventHandler>().bulb;
+            bool pika = GameObject.Find("ImageTarget (1)").GetComponent<DefaultTrackableEventHandler>().pika;
+            bulb = bulb || GameObject.Find("ImageTarget (2)").GetComponent<DefaultTrackableEventHandler>().bulb;
+            pika = pika || GameObject.Find("ImageTarget (2)").GetComponent<DefaultTrackableEventHandler>().pika;
+            Debug.Log(bulb);
+            Debug.Log(pika);
+            yield return new WaitForSeconds(3);
+            if (bulb && pika)
+                bulletSeed.transform.gameObject.SetActive(true);
+            yield return new WaitForSeconds(1);
+            if (healthbar.value - 10 < 0 && bulb && pika)
+            {
+                healthbar.value = 0;
+
+            }
+            else if (healthbar.value - 10 >= 0 && bulb && pika)
+            {
+                healthbar.value -= 10;
+            }
             yield return new WaitForSeconds(4);
             bulletSeed.transform.gameObject.SetActive(false);
-            health -= 10;
-            
+
+
+        }
+        if (healthbar.value <= 0)
+        {
+            Debug.Log("d");
+            //explosion.transform.Find("Trail Black").gameObject.SetActive(true);
+            //explosion.SetActive(true);
+            explosion.transform.gameObject.SetActive(true);
+            yield return new WaitForSeconds(3);
+            explosion.transform.gameObject.SetActive(false);
+            //explosion.SetActive(false);
+            //explosion.transform.Find("Trail Black").gameObject.SetActive(true);
         }
     }
-   /*
-    void onBulbButton()
-    {
-        StartCoroutine(Wait());
+    /*
+     void onBulbButton()
+     {
+         StartCoroutine(Wait());
 
-    }
-    */
-	// Update is called once per frame
-	void Update () {
-       // StartCoroutine(Wait());
+     }
+     */
+    // Update is called once per frame
+    void Update()
+    {
+        // StartCoroutine(Wait());
     }
 }
