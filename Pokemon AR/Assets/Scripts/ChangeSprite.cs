@@ -6,6 +6,7 @@ public class ChangeSprite : MonoBehaviour
 {
     public Sprite arrowNorth, arrowEast, arrowSouth, arrowWest;
     public bool gameIsOver = true;
+    public GameObject swipeDirection;
 
     int arrow;
     int num_losses = 0;
@@ -15,6 +16,11 @@ public class ChangeSprite : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        int a = swipeDirection.GetComponent<SwipeDetection>().direction;
+        Debug.Log(a);
+        Debug.Log("TESTING");
+
+
     }
 
     IEnumerator Wait(int arrow)
@@ -60,18 +66,15 @@ public class ChangeSprite : MonoBehaviour
             arrow = Random.Range(0, 4);
             Debug.Log(arrow);
             StartCoroutine(Wait(arrow));
-            gameIsOver = IsGameOver();
         }
     }
 
-    bool IsGameOver()
+    void IsGameOver()
     {
         if (num_losses >= 10)
-            return true;
+            gameIsOver = true;
         if (num_wins >= 3)
-            return true;
-        else
-            return false;
+            gameIsOver = true;
     }
 
 
