@@ -12,8 +12,13 @@ MonoBehaviour:
   m_Name: VuforiaConfiguration
   m_EditorClassIdentifier: 
   vuforia:
+<<<<<<< HEAD
     vuforiaLicenseKey: 
     ufoLicenseKey: QWJhUjNKdi8vLy8vQUFBQUtFZU0xK3M3SDA1bHR2MDBJcGZmcDF4cmo3MG9IMG5iUTNheWpHZisyYkxsRHcvRnp2VG1tUVM1MytuOVlZS1RUc2dXeHhhYUVDOWJ6MmYwOHVnOHkzUlMrYVQ5OFAyakN2dUZ4dlJFZEpKSXd6MlY3N0M0Y0JWbTUzVVppMFdOQVBXLy92OXVMbjBMb3d4ODBxcXNxMGlqL2JGb3FmQ2Q1Vnd6VCtQTm9SbmVmSzQxSDRBZE9jRVkyckZCMXVPbTJ2UzVkSWtmK3doMFZZdFBpMWRGNU1TSytxNHIyMFFXWExONkNXTHpyNHlZeXA2dDNBL2hORjZEaUlmbGVHQm90MFlwajYvT2dkREJnVUljUW9aQ0FVMCtoZUp0TTh0SGhHRmNhcU52bnRyenF5dFNlbjVWK2tkUVQxSVF0czdYU0MycW5LTFV6NnhMSzNLNFJQK01oUEVvRVJaM2I0V2ZVMWdyV0k4VU8rQTU=
+=======
+    vuforiaLicenseKey: AUS3k63/////AAAAmWxkdOvQME5YtU86KaZyIb5WGwhGtSw9v2JWByy9399bW4dWBa3dflauT0imcyxLi1by83Eip4xwRhP05pb8ApRoU609a8/vcpNlPJxZRawTkXoVevJvEQQqLouOiHBQxNqC03YX+7AWAX8nBUK2RLc3a+NgvO2J2dJAmeP6XYAxOv/VfObhcpuXN7GP3a1WdihXIDaEYhp/qlXRb/1XCzCePPyNW9c+tpcG6IPOjGS8/6CPJBTC9xlUltpRymQFI9P8cCOadMUKjxEukcfFwP3BUAErsO5fg3/L17pFAq8POjrqJb7hlj4dJf3l/OexTgnWCcZPtzrV9JzKxzuvjv2d/XxQcmGCGU6fq8lIgG5m
+    ufoLicenseKey: QVg4QkYwZi8vLy8vQUFBQUtOSUZFYXF1RmtadmprenNBUUQ3aHhrUVhPTEJCVklTQ3VremdHMjYrR0VGNHpsVEJDZkp3UE1rajY5SnRKcUprQ21FZCtjdWMwWEVzV1drTTE0NWs3Q0tOQlA5dXYyQUFLNytlbDB4Y1l4MjJjRWpvSlFsZURyYzQ3QkU4OHBUdUhFZmI3Ujk2NkxKMmRIWXZOb0N2TFZFeTRIUGpRTnJKRjZzdTdNaVFPMTZxSXpXczdKM29YNkQ0Lyt6ZWdKaFEwbWYwb3ZCQlVtYVFJUE5WeU42V1VrK2hid1Y0NmtFMGt3RjJCTXJRK1pCdWFJU2NiWDgrUlNUZGcwTFZsVE5mSUJwRHVZT3NmK0puaWhFM3FJOXlSWlJvZit4N2VHSnZ1cGVoY2ZZTE4yblVxR1RLT1RndGNDNVF1WkE0RUtUTk9QVVQ0NmE4RlozblJXaGs2ZHczNnBsU1lCeWk0NkJrNHZxRi9vVFJtZVM=
+>>>>>>> 1ac9a5d7ec6af4d32f96a494663732bb57239b57
     delayedInitialization: 0
     cameraDeviceModeSetting: -1
     maxSimultaneousImageTargets: 1
@@ -44,9 +49,19 @@ MonoBehaviour:
       ContainsMagnet: 0
   databaseLoad:
     dataSetsToLoad:
+<<<<<<< HEAD
     - VuforiaMars_Images
     - VuforiaMars_VuMark
     dataSetsToActivate:
+=======
+    - PokemonCard
+    - Image_Targets_PokeAR
+    - VuforiaMars_Images
+    - VuforiaMars_VuMark
+    dataSetsToActivate:
+    - PokemonCard
+    - Image_Targets_PokeAR
+>>>>>>> 1ac9a5d7ec6af4d32f96a494663732bb57239b57
     - VuforiaMars_Images
     - VuforiaMars_VuMark
   videoBackground:
