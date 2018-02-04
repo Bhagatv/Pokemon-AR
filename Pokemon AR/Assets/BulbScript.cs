@@ -22,13 +22,13 @@ public class BulbScript : MonoBehaviour
         //bulletSeedButton.onClick.AddListener(onBulbButton);
         bulletSeed.transform.gameObject.SetActive(false);
         explosion.transform.gameObject.SetActive(false);
-       // explosion.SetActive(false);
+        // explosion.SetActive(false);
         StartCoroutine(Wait());
     }
     IEnumerator Wait()
     {
-       
-       
+
+
         while (healthbar.value > 0) //will check if true)
         {
             bool bulb = GameObject.Find("ImageTarget (1)").GetComponent<DefaultTrackableEventHandler>().bulb;
@@ -38,7 +38,7 @@ public class BulbScript : MonoBehaviour
             Debug.Log(bulb);
             Debug.Log(pika);
             yield return new WaitForSeconds(3);
-            if(bulb && pika)
+            if (bulb && pika)
                 bulletSeed.transform.gameObject.SetActive(true);
             yield return new WaitForSeconds(1);
             if (healthbar.value - 10 < 0 && bulb && pika)
@@ -46,16 +46,16 @@ public class BulbScript : MonoBehaviour
                 healthbar.value = 0;
 
             }
-            else if(healthbar.value - 10 >= 0 && bulb && pika)
+            else if (healthbar.value - 10 >= 0 && bulb && pika)
             {
                 healthbar.value -= 10;
             }
             yield return new WaitForSeconds(4);
             bulletSeed.transform.gameObject.SetActive(false);
-            
+
 
         }
-        if(healthbar.value <= 0)
+        if (healthbar.value <= 0)
         {
             Debug.Log("d");
             //explosion.transform.Find("Trail Black").gameObject.SetActive(true);
