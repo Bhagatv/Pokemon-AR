@@ -12,17 +12,12 @@ MonoBehaviour:
   m_Name: VuforiaConfiguration
   m_EditorClassIdentifier: 
   vuforia:
-    vuforiaLicenseKey: AUS3k63/////AAAAmWxkdOvQME5YtU86KaZyIb5WGwhGtSw9v2JWByy9399bW4dWBa3dflauT0imcyxLi1by83Eip4xwRhP05pb8ApRoU609a8/vcpNlPJxZRawTkXoVevJvEQQqLouOiHBQxNqC03YX+7AWAX8nBUK2RLc3a+NgvO2J2dJAmeP6XYAxOv/VfObhcpuXN7GP3a1WdihXIDaEYhp/qlXRb/1XCzCePPyNW9c+tpcG6IPOjGS8/6CPJBTC9xlUltpRymQFI9P8cCOadMUKjxEukcfFwP3BUAErsO5fg3/L17pFAq8POjrqJb7hlj4dJf3l/OexTgnWCcZPtzrV9JzKxzuvjv2d/XxQcmGCGU6fq8lIgG5m
-    ufoLicenseKey: QVRScFl0TC8vLy8vQUFBQUtJZ3JIczhaNlVhMGlKb0gweUNnNXRFUkVJQXE5cml1QXpHZW1VaGdCSTZCcktLZXJJSityL3lLbUI4RXVmbEJLeU50UE5zQ2plUFJWZXBoOVMzNTdudm96K3JyVWw4bGQza2kzV0srYWlUTzB5WjFwbDl2MmNMdWFOSnE2cmk3NnRYbzFJc0hCamEyQmw1dGZLQ3BmUlp5bDdkKzZ1YzFiOXMzR2E1bDVlR1Y5eXJpdmsyRGQzTHAwajZoQjVZdm5CRFZqU0xwRzVVRUxnVU85cE5OZTlKb05tWUZoUzRVOHN0Wkc4NmRxZnljWWR5U2JDNXpTTU9xa3JDSHRJN3NxbGJFbzFTa2RHdmxWaXVsZEgyYW9RNFlldGtKcUtZZ0pyUklLNFhsQVhISTc5YkFHWUs3SE5EVEc0K0pBdHVKaU10c21GWnhtd3NKSlJZeE50b3oybmVVVG9lL1RUdVAxc21BRE83eDVhN0w=
+    vuforiaLicenseKey: 
+    ufoLicenseKey: QVQxWXRLbi8vLy8vQUFBQUtBTTFkcjhYTmtPbm0vdE1jZEowSEhLUDhVM1dYaWpNZklhYjhxZEVBZGtJV053WHIyV3ZFdlZER05tcXRYUmVIdzB4cWQ0cGoxSmJxY0NaMTNLRXV1TTVlNENBbVI1L0tHa3I5bUpBcnZiMGpweU41TEhXNTlJWnZpRk9mai9OYzFKcUVKSjQzWk1kNEtaWEpSQUswTTZVbVM0OFZEc2FFYXlkVVFzaXF4UGlublJPTnlCbEpYU2xYY1RkVFVUeU5pcFhZdHYvUk1PTU5IdThTNGpPeW9qUHVKeVlQL1REWXdrd044OHJiTDc3ZG9mb3FYTVNnWnNrcmZvVnZiL3FYNDJyS2taT2tRL2hyZFFySVZkRm9kZGNDMmdNSWpBRytUQXluYXdBdWw3ck05QjlRMkpCdUZpUmg1aGcvTkdzVmo0NDVzdHNMUndNNitWTWY3bVc2bHVVcDB6OGFCVENMd29VWkhzaGtnSGQ=
     delayedInitialization: 0
     cameraDeviceModeSetting: -1
-<<<<<<< HEAD
-    maxSimultaneousImageTargets: 2
-    maxSimultaneousObjectTargets: 2
-=======
     maxSimultaneousImageTargets: 1
     maxSimultaneousObjectTargets: 1
->>>>>>> 274495f2b4285379ac88c274ebd0750a99b069b7
     useDelayedLoadingObjectTargets: 0
     cameraDirection: 0
     mirrorVideoBackground: 0
@@ -49,19 +44,11 @@ MonoBehaviour:
       ContainsMagnet: 0
   databaseLoad:
     dataSetsToLoad:
-    - Image_Targets_PokeAR
-    - VuforiaMars_Images
-<<<<<<< HEAD
-    - VuforiaMars_VuMark
-    dataSetsToActivate:
-    - Image_Targets_PokeAR
     - VuforiaMars_Images
     - VuforiaMars_VuMark
-=======
     dataSetsToActivate:
-    - Image_Targets_PokeAR
     - VuforiaMars_Images
->>>>>>> 274495f2b4285379ac88c274ebd0750a99b069b7
+    - VuforiaMars_VuMark
   videoBackground:
     clippingMode: 0
     numDivisions: 2
