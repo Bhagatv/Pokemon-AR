@@ -6,11 +6,10 @@ public class ChangeSprite : MonoBehaviour
 {
     public Sprite arrowNorth, arrowEast, arrowSouth, arrowWest;
     public bool gameIsOver = false;
-    public GameObject swipeDirection;
 
     int arrow;
-    int num_losses = 0;
-    int num_wins = 0;
+    public int num_losses = 0;
+    public int num_wins = 0;
 
     public int swipeNum;
 
@@ -19,9 +18,10 @@ public class ChangeSprite : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        swipeNum = swipeDirection.GetComponent<SwipeDetection>().direction;
+        swipeNum = this.GetComponentInChildren<DirectionManager>().direction;
         Debug.Log(swipeNum);
         Debug.Log("TESTING");
+        gameIsOver = false;
 
 
     }
@@ -35,9 +35,15 @@ public class ChangeSprite : MonoBehaviour
             this.GetComponent<SpriteRenderer>().color = Color.white;
             yield return new WaitForSeconds(2);
             if (swipeNum == 0)
+            {
                 this.GetComponent<SpriteRenderer>().color = Color.green;
+                num_wins++;
+            }
             else
+            {
                 this.GetComponent<SpriteRenderer>().color = Color.red;
+                num_losses++;
+            }
         }
         else if (arrow == 1)
         {
@@ -45,9 +51,15 @@ public class ChangeSprite : MonoBehaviour
             this.GetComponent<SpriteRenderer>().color = Color.white;
             yield return new WaitForSeconds(2);
             if (swipeNum == 1)
+            {
                 this.GetComponent<SpriteRenderer>().color = Color.green;
+                num_wins++;
+            }
             else
+            {
                 this.GetComponent<SpriteRenderer>().color = Color.red;
+                num_losses++;
+            }
         }
         else if (arrow == 2)
         {
@@ -55,9 +67,15 @@ public class ChangeSprite : MonoBehaviour
             this.GetComponent<SpriteRenderer>().color = Color.white;
             yield return new WaitForSeconds(2);
             if (swipeNum == 2)
+            {
                 this.GetComponent<SpriteRenderer>().color = Color.green;
+                num_wins++;
+            }
             else
+            {
                 this.GetComponent<SpriteRenderer>().color = Color.red;
+                num_losses++;
+            }
         }
         else if (arrow == 3)
         {
@@ -65,20 +83,28 @@ public class ChangeSprite : MonoBehaviour
             this.GetComponent<SpriteRenderer>().color = Color.white;
             yield return new WaitForSeconds(2);
             if (swipeNum == 3)
+            {
                 this.GetComponent<SpriteRenderer>().color = Color.green;
+                num_wins++;
+            }
             else
+            {
                 this.GetComponent<SpriteRenderer>().color = Color.red;
+                num_losses++;
+            }
         }
+
         yield return new WaitForSeconds(1);
-        swipeDirection.GetComponent<SwipeDetection>().hasBeenSwiped = false;
-        swipeNum = -1;
+        this.GetComponentInChildren<DirectionManager>().isPressed = false;
+        this.GetComponentInChildren<DirectionManager>().direction = -1;
         gameIsOver = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        swipeNum = swipeDirection.GetComponent<SwipeDetection>().direction;
+        //if (!this.GetComponentInChildren<DirectionManager>().isPressed)
+            swipeNum = this.GetComponentInChildren<DirectionManager>().direction;
         if (!gameIsOver)
         {
             arrow = Random.Range(0, 4);
@@ -91,9 +117,9 @@ public class ChangeSprite : MonoBehaviour
 
     void IsGameOver()
     {
-        if (num_losses >= 10)
+        if (num_losses >= 3)
             gameIsOver = true;
-        if (num_wins >= 3)
+        if (num_wins >= 10)
             gameIsOver = true;
     }
 
