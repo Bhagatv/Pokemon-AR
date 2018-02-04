@@ -50,6 +50,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Veeral.unity
     guid: 27f0b910e8ac5d74e8828236d72598be
-  - enabled: 0
+  - enabled: 1
     path: Assets/Kent.unity
     guid: b35e68f239f286e4eb062b56a22e0a25

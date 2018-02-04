@@ -1,12 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ChangeSprite : MonoBehaviour
 {
+    public bool done;
+    public Image board;
+    public Text winText;
+    public Text loseText;
+
     public Sprite arrowNorth, arrowEast, arrowSouth, arrowWest;
     bool gameIsOver = false;
     int arrow;
+    bool gameIsOverReal = false;
 
     public int num_losses = 0;
     public int num_wins = 0;
@@ -20,15 +28,43 @@ public class ChangeSprite : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        done = false;
+        board.enabled = false;
+        winText.enabled = false;
+        loseText.enabled = false;
+
 		myanimator = pokemon.GetComponent<Animator> ();
         swipeNum = this.GetComponentInChildren<DirectionManager>().direction;
-        //Debug.Log(swipeNum);
-        //Debug.Log("TESTING");
         gameIsOver = false;
+
 
 
     }
 
+    IEnumerator stallForPrep()
+    {
+        Debug.Log("yeet");
+        yield return new WaitForSeconds(3);
+        Debug.Log("begin!");
+
+
+    }
+    IEnumerator win()
+    {
+        board.enabled = true;
+        winText.enabled = true;
+        yield return new WaitForSeconds(3);
+        SceneManager.LoadScene("Market");
+
+    }
+
+    IEnumerator lose()
+    {
+        board.enabled = true;
+        loseText.enabled = true;
+        yield return new WaitForSeconds(3);
+        SceneManager.LoadScene("Market");
+    }
     IEnumerator Wait(int arrow)
     {
         gameIsOver = true;
@@ -131,15 +167,44 @@ public class ChangeSprite : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if (!this.GetComponentInChildren<DirectionManager>().isPressed)
-        swipeNum = this.GetComponentInChildren<DirectionManager>().direction;
-        if (!gameIsOver)
+        bool pika = GameObject.Find("WorkingPikachuCard").GetComponent<DefaultTrackableEventHandler>().pika;
+
+        if (pika)
         {
-            arrow = Random.Range(0, 4);
-            Debug.Log(arrow);
-            StartCoroutine(Wait(arrow));
-      
-            //IsGameOver();
+            //if (!this.GetComponentInChildren<DirectionManager>().isPressed)
+            swipeNum = this.GetComponentInChildren<DirectionManager>().direction;
+            if (!gameIsOver)
+            {
+                arrow = Random.Range(0, 4);
+                Debug.Log(arrow);
+                StartCoroutine(Wait(arrow));
+
+            }
+
+            if (gameIsOverReal)
+            {
+                if (gameWin)
+                {
+                    if (!done)
+                    {
+                        done = true;
+                        Counters.happiness += 20;
+                        StartCoroutine(win());
+                    }
+
+                }
+                else
+                {
+                    if (!done)
+                    {
+                        done = true;
+                        Counters.happiness -= 20;
+                        StartCoroutine(lose());
+                    }
+
+                }
+            }
+
         }
     }
 
@@ -147,13 +212,16 @@ public class ChangeSprite : MonoBehaviour
     {
         if (num_losses >= 3)
         {
+            gameIsOverReal = true;
             gameIsOver = true;
             gameWin = false;
         }
         if (num_wins >= 10)
         {
+            gameIsOverReal = true;
             gameIsOver = true;
             gameWin = true;
+
         }
     }
 

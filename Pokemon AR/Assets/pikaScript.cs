@@ -30,6 +30,8 @@ public class pikaScript : MonoBehaviour
         if (AIhealthbar.value > 0)
         {
             waterSpray.transform.Find("WaterShower").gameObject.SetActive(true);
+            AudioSource thunder = GetComponent<AudioSource>();
+            thunder.Play();
             yield return new WaitForSeconds(1);
             if (AIhealthbar.value - 10 < 0)
             {
