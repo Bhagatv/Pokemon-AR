@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class Counters : MonoBehaviour
 {
-    static int happiness = 0;
-    static int points = 0;
+    public static int happiness = 0;
+    public static int points = 0;
     public Text happy;
     public Text point;
 
