@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class pikaScript : MonoBehaviour
 {
     public Button waterGun;
@@ -40,7 +41,12 @@ public class pikaScript : MonoBehaviour
         }
         else
         {
+            //pika won
+            //show win board
+            //up points
             explosion.transform.gameObject.SetActive(true);
+            yield return new WaitForSeconds(3);
+            SceneManager.LoadScene("Market");
 
         }
     }

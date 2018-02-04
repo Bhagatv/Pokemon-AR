@@ -5,13 +5,14 @@ using UnityEngine;
 public class ChangeSprite : MonoBehaviour
 {
     public Sprite arrowNorth, arrowEast, arrowSouth, arrowWest;
-    public bool gameIsOver = false;
-
+    bool gameIsOver = false;
     int arrow;
+
     public int num_losses = 0;
     public int num_wins = 0;
 
     public int swipeNum;
+    public bool gameWin;
 
 
 
@@ -19,8 +20,8 @@ public class ChangeSprite : MonoBehaviour
     void Start()
     {
         swipeNum = this.GetComponentInChildren<DirectionManager>().direction;
-        Debug.Log(swipeNum);
-        Debug.Log("TESTING");
+        //Debug.Log(swipeNum);
+        //Debug.Log("TESTING");
         gameIsOver = false;
 
 
@@ -119,9 +120,15 @@ public class ChangeSprite : MonoBehaviour
     void IsGameOver()
     {
         if (num_losses >= 3)
+        {
             gameIsOver = true;
+            gameWin = false;
+        }
         if (num_wins >= 10)
+        {
             gameIsOver = true;
+            gameWin = true;
+        }
     }
 
 
