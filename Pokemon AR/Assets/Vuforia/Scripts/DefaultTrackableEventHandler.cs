@@ -12,6 +12,7 @@ using Vuforia;
 /// <summary>
 ///     A custom handler that implements the ITrackableEventHandler interface.
 /// </summary>
+
 public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandler
 {
     #region PRIVATE_MEMBER_VARIABLES
@@ -37,6 +38,8 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
     ///     Implementation of the ITrackableEventHandler function called when the
     ///     tracking state changes.
     /// </summary>
+    public bool bulb = false;
+    public bool pika = false;
     public void OnTrackableStateChanged(
         TrackableBehaviour.Status previousStatus,
         TrackableBehaviour.Status newStatus)
@@ -46,16 +49,34 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
             newStatus == TrackableBehaviour.Status.EXTENDED_TRACKED)
         {
             Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " found");
+           if(mTrackableBehaviour.TrackableName == "bulbacard")
+            {
+                bulb = true;
+            }
+           if(mTrackableBehaviour.TrackableName == "pikacard")
+            {
+                pika = true;
+            }
             OnTrackingFound();
         }
         else if (previousStatus == TrackableBehaviour.Status.TRACKED &&
                  newStatus == TrackableBehaviour.Status.NOT_FOUND)
         {
             Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " lost");
+            if (mTrackableBehaviour.TrackableName == "bulbacard")
+            {
+                bulb = false;
+            }
+            if (mTrackableBehaviour.TrackableName == "pikacard")
+            {
+                pika = false;
+            }
             OnTrackingLost();
         }
         else
         {
+            bulb = false;
+            pika = false;
             // For combo of previousStatus=UNKNOWN + newStatus=UNKNOWN|NOT_FOUND
             // Vuforia is starting, but tracking has not been lost or found yet
             // Call OnTrackingLost() to hide the augmentations
@@ -75,8 +96,11 @@ public class DefaultTrackableEventHandler : MonoBehaviour, ITrackableEventHandle
 
         // Enable rendering:
         foreach (var component in rendererComponents)
-            component.enabled = true;
+        {
 
+            
+            component.enabled = true;
+        }   
         // Enable colliders:
         foreach (var component in colliderComponents)
             component.enabled = true;
