@@ -11,7 +11,8 @@ public class normalPikachuScript : MonoBehaviour {
 	
     public void pikachuPat()
     {
-       // fireworks.SetActive(false);
+        // fireworks.SetActive(false);
+        Counters.happiness++;
         Debug.Log("button clicked");
         animator = pikachu.GetComponent<Animator>();
         StartCoroutine("Wait");
