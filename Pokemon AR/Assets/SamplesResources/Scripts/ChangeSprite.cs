@@ -110,6 +110,7 @@ public class ChangeSprite : MonoBehaviour
         if (!gameIsOver)
         {
             arrow = Random.Range(0, 4);
+            Debug.Log("meet this");
             Debug.Log(arrow);
             StartCoroutine(Wait(arrow));
       
@@ -119,7 +120,7 @@ public class ChangeSprite : MonoBehaviour
 
     void IsGameOver()
     {
-        if (num_losses >= 3)
+        if (num_losses >= 5)
         {
             gameIsOver = true;
             gameWin = false;
