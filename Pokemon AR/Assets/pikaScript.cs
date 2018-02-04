@@ -7,6 +7,7 @@ public class pikaScript : MonoBehaviour
     public Button waterGun;
     //public GameObject spawnPoint;
     public GameObject waterSpray;
+    public GameObject explosion;
     // Use this for initialization
     void Start()
     {
