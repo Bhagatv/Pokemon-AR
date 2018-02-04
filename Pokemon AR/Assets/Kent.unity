@@ -1422,6 +1422,7 @@ GameObject:
   - component: {fileID: 1732035812}
   - component: {fileID: 1732035811}
   - component: {fileID: 1732035810}
+  - component: {fileID: 1732035813}
   m_Layer: 0
   m_Name: Arrows
   m_TagString: Untagged
@@ -1437,13 +1438,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1732035809}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dadb6886767a5204c8274a25d5971984, type: 3}
+  m_Script: {fileID: 11500000, guid: e655df264aa2586449b108a6663e12c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   arrowNorth: {fileID: 21300000, guid: e201c8a53137ebf40b5c6e90a40ecf73, type: 3}
   arrowEast: {fileID: 21300000, guid: 4035f7b1765703946a3b0c3709aac9a4, type: 3}
   arrowSouth: {fileID: 21300000, guid: c82efeabea950594f8d0b138b16681ce, type: 3}
   arrowWest: {fileID: 21300000, guid: 964eac5c9567e244d81177864aaeeb78, type: 3}
+  gameIsOver: 1
+  swipeDirection: {fileID: 1732035809}
+  index: 0
 --- !u!212 &1732035811
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1501,6 +1505,22 @@ Transform:
   m_Father: {fileID: 304576055}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1732035813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1732035809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c42e6813fef244f40869203e2f5514ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minSwipeLength: 200
+  Parent: {fileID: 0}
+  currentlySwiping: 0
+  direction: 5
+  hasBeenSwiped: 0
 --- !u!1 &1899247793
 GameObject:
   m_ObjectHideFlags: 0
