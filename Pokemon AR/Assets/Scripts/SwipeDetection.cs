@@ -5,142 +5,135 @@ using UnityEngine;
 
 public class SwipeDetection : MonoBehaviour
 {
-	public float minSwipeLength = 200f;
-	Vector2 isPress;
-	Vector2 notPress;
-	Vector2 deltaSwipe;
+    public float minSwipeLength = 200f;
+    Vector2 isPress;
+    Vector2 notPress;
+    Vector2 deltaSwipe;
 
-	public static Swipe swipeDirection;
+    public static Swipe swipeDirection;
 
-	public enum Swipe { None, Up, Down, Left, Right };
-	public Transform Parent;
-	public bool currentlySwiping = false;
-	public int direction = 5;
-	public bool hasBeenSwiped = false;
-
-
-
-	void Start()
-	{
-		
-	}
-
-	void Update ()
-	{
-		DetectSwipe();
-
-	}
-
-	public void DetectSwipe ()
-	{
-<<<<<<< HEAD
-		if (Application.platform != RuntimePlatform.Android || Application.platform != RuntimePlatform.Android)
-		{
-=======
-		if (Application.platform != RuntimePlatform.Android || Application.platform != RuntimePlatform.Android) {
->>>>>>> 274495f2b4285379ac88c274ebd0750a99b069b7
-			if (Input.GetMouseButtonDown (0)) {
-				isPress = new Vector2 (Input.mousePosition.x, Input.mousePosition.y);
-				currentlySwiping = true;
-			}
-<<<<<<< HEAD
-			if (Input.GetMouseButtonUp(0)) {
-				currentlySwiping = false;
-				notPress = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
-=======
-			if (Input.GetMouseButtonUp (0)) {
-				currentlySwiping = false;
-				notPress = new Vector2 (Input.mousePosition.x, Input.mousePosition.y);
->>>>>>> 274495f2b4285379ac88c274ebd0750a99b069b7
-				deltaSwipe = new Vector2 (notPress.x - isPress.x, notPress.y - isPress.y);
-				deltaSwipe.Normalize ();
-			}
-
-			if (deltaSwipe.x > -0.5f && deltaSwipe.y > 0 && deltaSwipe.x < 0.5f && currentlySwiping && !hasBeenSwiped) {
-				Debug.Log ("up");
-				direction = 0;
-				hasBeenSwiped = true;
-
-			}
-			if (deltaSwipe.x > -0.5f && deltaSwipe.y < 0 && deltaSwipe.x < 0.5f && currentlySwiping && !hasBeenSwiped) {
-				Debug.Log ("down");
-				direction = 2;
-				hasBeenSwiped = true;
-<<<<<<< HEAD
-			}
-			if (deltaSwipe.x < 0 && deltaSwipe.y > -0.5f && deltaSwipe.y < 0.5f && currentlySwiping && !hasBeenSwiped) {
-				Debug.Log ("left");
-				direction = 3;
-				hasBeenSwiped = true;
-			}
-=======
-			}
-			if (deltaSwipe.x < 0 && deltaSwipe.y > -0.5f && deltaSwipe.y < 0.5f && currentlySwiping && !hasBeenSwiped) {
-				Debug.Log ("left");
-				direction = 3;
-				hasBeenSwiped = true;
-			}
->>>>>>> 274495f2b4285379ac88c274ebd0750a99b069b7
-			if (deltaSwipe.x > 0 && deltaSwipe.y > -0.5f && deltaSwipe.y < 0.5f && currentlySwiping && !hasBeenSwiped) {
-				Debug.Log ("right");
-				direction = 1;
-				hasBeenSwiped = true;
-			}
+    public enum Swipe { None, Up, Down, Left, Right };
+    public Transform Parent;
+    public bool currentlySwiping = false;
+    public int direction = 5;
+    public bool hasBeenSwiped = false;
 
 
-<<<<<<< HEAD
-=======
-		} else {
-			if (Input.touches.Length > 0) {
-				Touch t = Input.GetTouch (0);
 
-				if (t.phase == TouchPhase.Began) {
-					isPress = new Vector2 (t.position.x, t.position.y);
-				}
-				if (t.phase == TouchPhase.Ended) {
-					notPress = new Vector2 (t.position.x, t.position.y);
-					deltaSwipe = new Vector2 (notPress.x - isPress.x, notPress.y - isPress.y);
-				}
+    void Start()
+    {
 
-				if (deltaSwipe.magnitude < minSwipeLength) {
-					swipeDirection = Swipe.None;
-					return;
-				}
+    }
 
-				deltaSwipe.Normalize ();
+    void Update()
+    {
+        DetectSwipe();
 
-				if (deltaSwipe.x > -0.5f && deltaSwipe.y > 0 && deltaSwipe.x < 0.5f && currentlySwiping && !hasBeenSwiped) {
-					Debug.Log ("up");
-					direction = 0;
-					hasBeenSwiped = true;
+    }
 
-				}
-				if (deltaSwipe.x > -0.5f && deltaSwipe.y < 0 && deltaSwipe.x < 0.5f && currentlySwiping && !hasBeenSwiped) {
-					Debug.Log ("down");
-					direction = 2;
-					hasBeenSwiped = true;
-				}
-				if (deltaSwipe.x < 0 && deltaSwipe.y > -0.5f && deltaSwipe.y < 0.5f && currentlySwiping && !hasBeenSwiped) {
-					Debug.Log ("left");
-					direction = 3;
-					hasBeenSwiped = true;
-				}
-				if (deltaSwipe.x > 0 && deltaSwipe.y > -0.5f && deltaSwipe.y < 0.5f && currentlySwiping && !hasBeenSwiped) {
-					Debug.Log ("right");
-					direction = 1;
-					hasBeenSwiped = true;
-				}
+    public void DetectSwipe()
+    {
+        if (Application.platform != RuntimePlatform.Android || Application.platform != RuntimePlatform.Android)
+        {
+            if (Input.GetMouseButtonDown(0))
+            {
+                isPress = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
+                currentlySwiping = true;
+            }
+            if (Input.GetMouseButtonUp(0))
+            {
+                currentlySwiping = false;
+                notPress = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
+                deltaSwipe = new Vector2(notPress.x - isPress.x, notPress.y - isPress.y);
+                deltaSwipe.Normalize();
+            }
+
+            if (deltaSwipe.x > -0.5f && deltaSwipe.y > 0 && deltaSwipe.x < 0.5f && currentlySwiping && !hasBeenSwiped)
+            {
+                Debug.Log("up");
+                direction = 0;
+                hasBeenSwiped = true;
+
+            }
+            if (deltaSwipe.x > -0.5f && deltaSwipe.y < 0 && deltaSwipe.x < 0.5f && currentlySwiping && !hasBeenSwiped)
+            {
+                Debug.Log("down");
+                direction = 2;
+                hasBeenSwiped = true;
+            }
+            if (deltaSwipe.x < 0 && deltaSwipe.y > -0.5f && deltaSwipe.y < 0.5f && currentlySwiping && !hasBeenSwiped)
+            {
+                Debug.Log("left");
+                direction = 3;
+                hasBeenSwiped = true;
+            }
+            if (deltaSwipe.x > 0 && deltaSwipe.y > -0.5f && deltaSwipe.y < 0.5f && currentlySwiping && !hasBeenSwiped)
+            {
+                Debug.Log("right");
+                direction = 1;
+                hasBeenSwiped = true;
+            }
 
 
-			}
->>>>>>> 274495f2b4285379ac88c274ebd0750a99b069b7
-		}
-	  
-	}
+        }
+        else
+        {
+            if (Input.touches.Length > 0)
+            {
+                Touch t = Input.GetTouch(0);
 
-	IEnumerator Delay()
-	{
-		yield return new WaitForSeconds (5);
-	}
+                if (t.phase == TouchPhase.Began)
+                {
+                    isPress = new Vector2(t.position.x, t.position.y);
+                }
+                if (t.phase == TouchPhase.Ended)
+                {
+                    notPress = new Vector2(t.position.x, t.position.y);
+                    deltaSwipe = new Vector2(notPress.x - isPress.x, notPress.y - isPress.y);
+                }
+
+                if (deltaSwipe.magnitude < minSwipeLength)
+                {
+                    swipeDirection = Swipe.None;
+                    return;
+                }
+
+                deltaSwipe.Normalize();
+
+                if (deltaSwipe.x > -0.5f && deltaSwipe.y > 0 && deltaSwipe.x < 0.5f && currentlySwiping && !hasBeenSwiped)
+                {
+                    Debug.Log("up");
+                    direction = 0;
+                    hasBeenSwiped = true;
+
+                }
+                if (deltaSwipe.x > -0.5f && deltaSwipe.y < 0 && deltaSwipe.x < 0.5f && currentlySwiping && !hasBeenSwiped)
+                {
+                    Debug.Log("down");
+                    direction = 2;
+                    hasBeenSwiped = true;
+                }
+                if (deltaSwipe.x < 0 && deltaSwipe.y > -0.5f && deltaSwipe.y < 0.5f && currentlySwiping && !hasBeenSwiped)
+                {
+                    Debug.Log("left");
+                    direction = 3;
+                    hasBeenSwiped = true;
+                }
+                if (deltaSwipe.x > 0 && deltaSwipe.y > -0.5f && deltaSwipe.y < 0.5f && currentlySwiping && !hasBeenSwiped)
+                {
+                    Debug.Log("right");
+                    direction = 1;
+                    hasBeenSwiped = true;
+                }
+
+
+            }
+        }
+
+    }
+
+    IEnumerator Delay()
+    {
+        yield return new WaitForSeconds(5);
+    }
 }
-

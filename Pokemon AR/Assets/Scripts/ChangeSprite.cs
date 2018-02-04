@@ -22,6 +22,7 @@ public class ChangeSprite : MonoBehaviour
         swipeNum = swipeDirection.GetComponent<SwipeDetection>().direction;
         Debug.Log(swipeNum);
         Debug.Log("TESTING");
+        gameIsOver = false;
 
 
     }
