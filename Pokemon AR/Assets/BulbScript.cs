@@ -20,7 +20,11 @@ public class BulbScript : MonoBehaviour {
         int health = 100;
        while(health != 0)
         {
+<<<<<<< HEAD
            // temp.GetComponent<Slider>().value = health;
+=======
+ //           temp.GetComponent<Slider>().value = health;
+>>>>>>> 17dc443c01cb04915e9038ef384644f2a2cd7f3b
             yield return new WaitForSeconds(2);
             bulletSeed.transform.gameObject.SetActive(true);
             yield return new WaitForSeconds(4);
