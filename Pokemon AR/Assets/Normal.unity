@@ -1033,12 +1033,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c42e6813fef244f40869203e2f5514ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minSwipeLength: 200
-  Parent: {fileID: 99212553}
-  currentlySwiping: 0
-  jumpDistance: {x: 0, y: 0, z: 0}
-  jumpForce: 2
-  isGrounded: 0
 --- !u!1001 &1269270106
 Prefab:
   m_ObjectHideFlags: 0
@@ -1148,7 +1142,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: f658acc8bc7055e4790ac6f4ec794d57, type: 3}
+  m_Sprite: {fileID: 21300000, guid: dff0ad6adb5963a4399f601135f5d048, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2033,7 +2027,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 8dec7ab1b85514841a34d2f257ed647b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4ff8e82b24653974d8659059dcf56d6b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2264,7 +2258,7 @@ Animator:
   m_GameObject: {fileID: 2066375757}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 971468bcab9b0934fac0cdfa8dccdc55, type: 2}
+  m_Controller: {fileID: 9100000, guid: f8ec675346b36934893a6838a69e9026, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
