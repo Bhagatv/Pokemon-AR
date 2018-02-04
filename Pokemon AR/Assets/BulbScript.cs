@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class BulbScript : MonoBehaviour
 {
     // public Button bulletSeedButton;
@@ -9,11 +10,15 @@ public class BulbScript : MonoBehaviour
     public GameObject bulletSeed;
     public Slider healthbar;
     public GameObject explosion;
+    public Image winBoard;
+    public Text loseText;
     //public GameObject temp = GameObject.Find("Slider");
-    
+
     // Use this for initialization
     void Start()
     {
+        winBoard.enabled = false;
+        loseText.enabled = false;
         //bulletSeedButton.onClick.AddListener(onBulbButton);
         bulletSeed.transform.gameObject.SetActive(false);
         explosion.transform.gameObject.SetActive(false);
@@ -56,8 +61,13 @@ public class BulbScript : MonoBehaviour
             //explosion.transform.Find("Trail Black").gameObject.SetActive(true);
             //explosion.SetActive(true);
             explosion.transform.gameObject.SetActive(true);
+            yield return new WaitForSeconds(2);
+            winBoard.enabled = true;
+            loseText.enabled = true;
+            Counters.points -= 20;
             yield return new WaitForSeconds(3);
-            explosion.transform.gameObject.SetActive(false);
+            SceneManager.LoadScene("Market");
+
             //explosion.SetActive(false);
             //explosion.transform.Find("Trail Black").gameObject.SetActive(true);
         }

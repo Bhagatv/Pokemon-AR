@@ -5,6 +5,8 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class pikaScript : MonoBehaviour
 {
+    public Image winBoard;
+    public Text winText;
     public Button waterGun;
     //public GameObject spawnPoint;
     public GameObject waterSpray;
@@ -17,6 +19,8 @@ public class pikaScript : MonoBehaviour
         waterGun.onClick.AddListener(waterGunDown);
         waterSpray.transform.Find("WaterShower").gameObject.SetActive(false);
         explosion.transform.gameObject.SetActive(false);
+        winBoard.enabled = false;
+        winText.enabled = false;
     }
 
 
@@ -42,9 +46,12 @@ public class pikaScript : MonoBehaviour
         else
         {
             //pika won
-            //show win board
-            //up points
+
             explosion.transform.gameObject.SetActive(true);
+            yield return new WaitForSeconds(2);
+            winBoard.enabled = true;
+            winText.enabled = true;
+            Counters.points += 20;
             yield return new WaitForSeconds(3);
             SceneManager.LoadScene("Market");
 

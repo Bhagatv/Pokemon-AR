@@ -38,9 +38,18 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/SamplesResources/Scenes/3-VuMark.unity
     guid: d9b53b25a285640cf8ac170a80603e34
-  - enabled: 0
+  - enabled: 1
+    path: Assets/Menu.unity
+    guid: 3549ecc237b6ecf40bd020fe95d4af2b
+  - enabled: 1
+    path: Assets/Normal.unity
+    guid: e45663597b3666c499e6725215555eb1
+  - enabled: 1
+    path: Assets/Market.unity
+    guid: 5b58d8f99d1ec0043a2e161eba4c5edb
+  - enabled: 1
     path: Assets/Veeral.unity
     guid: 27f0b910e8ac5d74e8828236d72598be
-  - enabled: 1
+  - enabled: 0
     path: Assets/Kent.unity
     guid: b35e68f239f286e4eb062b56a22e0a25
