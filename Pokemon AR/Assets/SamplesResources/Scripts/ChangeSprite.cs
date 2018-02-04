@@ -13,12 +13,14 @@ public class ChangeSprite : MonoBehaviour
 
     public int swipeNum;
     public bool gameWin;
-
+	public GameObject pokemon;
+	Animator myanimator;
 
 
     // Use this for initialization
     void Start()
     {
+		myanimator = pokemon.GetComponent<Animator> ();
         swipeNum = this.GetComponentInChildren<DirectionManager>().direction;
         //Debug.Log(swipeNum);
         //Debug.Log("TESTING");
@@ -39,11 +41,17 @@ public class ChangeSprite : MonoBehaviour
             {
                 this.GetComponent<SpriteRenderer>().color = Color.green;
                 num_wins++;
+				myanimator.SetBool ("Success", true);
+				yield return new WaitForSeconds (1);
+				myanimator.SetBool ("Success", false);
             }
             else
             {
                 this.GetComponent<SpriteRenderer>().color = Color.red;
                 num_losses++;
+				myanimator.SetBool ("Fail", true);
+				yield return new WaitForSeconds (1);
+				myanimator.SetBool ("Fail", false);
             }
         }
         else if (arrow == 3)
@@ -55,11 +63,17 @@ public class ChangeSprite : MonoBehaviour
             {
                 this.GetComponent<SpriteRenderer>().color = Color.green;
                 num_wins++;
+				myanimator.SetBool ("Success", true);
+				yield return new WaitForSeconds (1);
+				myanimator.SetBool ("Success", false);
             }
             else
             {
                 this.GetComponent<SpriteRenderer>().color = Color.red;
                 num_losses++;
+				myanimator.SetBool ("Fail", true);
+				yield return new WaitForSeconds (1);
+				myanimator.SetBool ("Fail", false);
             }
         }
         else if (arrow == 2)
@@ -71,11 +85,17 @@ public class ChangeSprite : MonoBehaviour
             {
                 this.GetComponent<SpriteRenderer>().color = Color.green;
                 num_wins++;
+				myanimator.SetBool ("Success", true);
+				yield return new WaitForSeconds (1);
+				myanimator.SetBool ("Success", false);
             }
             else
             {
                 this.GetComponent<SpriteRenderer>().color = Color.red;
                 num_losses++;
+				myanimator.SetBool ("Fail", true);
+				yield return new WaitForSeconds (1);
+				myanimator.SetBool ("Fail", false);
             }
         }
         else if (arrow == 1)
@@ -87,11 +107,17 @@ public class ChangeSprite : MonoBehaviour
             {
                 this.GetComponent<SpriteRenderer>().color = Color.green;
                 num_wins++;
+				myanimator.SetBool ("Success", true);
+				yield return new WaitForSeconds (1);
+				myanimator.SetBool ("Success", false);
             }
             else
             {
                 this.GetComponent<SpriteRenderer>().color = Color.red;
                 num_losses++;
+				myanimator.SetBool ("Fail", true);
+				yield return new WaitForSeconds (1);
+				myanimator.SetBool ("Fail", false);
             }
         }
 
@@ -106,7 +132,7 @@ public class ChangeSprite : MonoBehaviour
     void Update()
     {
         //if (!this.GetComponentInChildren<DirectionManager>().isPressed)
-            swipeNum = this.GetComponentInChildren<DirectionManager>().direction;
+        swipeNum = this.GetComponentInChildren<DirectionManager>().direction;
         if (!gameIsOver)
         {
             arrow = Random.Range(0, 4);
