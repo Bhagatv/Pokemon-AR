@@ -45,12 +45,12 @@ public class ChangeSprite : MonoBehaviour
                 num_losses++;
             }
         }
-        else if (arrow == 1)
+        else if (arrow == 3)
         {
             this.GetComponent<SpriteRenderer>().sprite = arrowEast;
             this.GetComponent<SpriteRenderer>().color = Color.white;
             yield return new WaitForSeconds(2);
-            if (swipeNum == 1)
+            if (swipeNum == 3)
             {
                 this.GetComponent<SpriteRenderer>().color = Color.green;
                 num_wins++;
@@ -77,12 +77,12 @@ public class ChangeSprite : MonoBehaviour
                 num_losses++;
             }
         }
-        else if (arrow == 3)
+        else if (arrow == 1)
         {
             this.GetComponent<SpriteRenderer>().sprite = arrowWest;
             this.GetComponent<SpriteRenderer>().color = Color.white;
             yield return new WaitForSeconds(2);
-            if (swipeNum == 3)
+            if (swipeNum == 1)
             {
                 this.GetComponent<SpriteRenderer>().color = Color.green;
                 num_wins++;
@@ -98,6 +98,7 @@ public class ChangeSprite : MonoBehaviour
         this.GetComponentInChildren<DirectionManager>().isPressed = false;
         this.GetComponentInChildren<DirectionManager>().direction = -1;
         gameIsOver = false;
+        IsGameOver();
     }
 
     // Update is called once per frame
@@ -111,7 +112,7 @@ public class ChangeSprite : MonoBehaviour
             Debug.Log(arrow);
             StartCoroutine(Wait(arrow));
       
-            IsGameOver();
+            //IsGameOver();
         }
     }
 

@@ -13,7 +13,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vuforia:
     vuforiaLicenseKey: AUS3k63/////AAAAmWxkdOvQME5YtU86KaZyIb5WGwhGtSw9v2JWByy9399bW4dWBa3dflauT0imcyxLi1by83Eip4xwRhP05pb8ApRoU609a8/vcpNlPJxZRawTkXoVevJvEQQqLouOiHBQxNqC03YX+7AWAX8nBUK2RLc3a+NgvO2J2dJAmeP6XYAxOv/VfObhcpuXN7GP3a1WdihXIDaEYhp/qlXRb/1XCzCePPyNW9c+tpcG6IPOjGS8/6CPJBTC9xlUltpRymQFI9P8cCOadMUKjxEukcfFwP3BUAErsO5fg3/L17pFAq8POjrqJb7hlj4dJf3l/OexTgnWCcZPtzrV9JzKxzuvjv2d/XxQcmGCGU6fq8lIgG5m
+<<<<<<< HEAD
     ufoLicenseKey: QVNROVlIZi8vLy8vQUFBQUtBWDU4WVFkTEVMWWlYVkVFYkRHWmtJQzlCTFdvcXhheVlOOTFWUHBWaGhXWU5UckVPcitUN3BMaVE1YkNFaDNWQnI4MHJzSWoxdzlRMGV2S3FTdmN0aHRJVnE4UjZscEd6S3AyQUx2T0JkYm93ditsUmdHN0hVTlZDL0JyVUsvZmVSZHRpYmkzSmw0dENGOHc4dlM2alpNeVJpSXRSdmcvOGpqNEk3VEhwTjlVaTU4bVk4alFEeldjbGU2ajZKb3RFZStPVWZPQWZpaWMvbXA1N25oL05XZlh5U2lxOVd4RHZ2ZHMxVVFmcDV4b0xINXd6c3ZncGcrZ3RIamhiRHRCaHdzdURvS0xFcFcxR21uSzVsV0oyejdBRm1NMlFMNmQ2UjJlczROSmZCaWRzMS9UOXVCUEtnb3ZKL04yYWJoZ3NsdzE3NEdha2w3cnVwZmpWNWY2WTEybmNhcGdpQjhmMlFvLy9ETXBOTmk=
+=======
+    ufoLicenseKey: QVFtNE53di8vLy8vQUFBQUtOUHJzeHRMNWtrdWtjcHVOb0xtdmxjc3BrS3VqY21tOTNrQ3E5RTFkbDBFVzJ2RmYxd2ZTQzgzemI4OU81dFF0bzJyUlFXZWkxZWQweU4vSTltN0xjdWJBQ28vRDBNK01tQlZ0cCtmazhEZ2IvMGlMZTU1dDF0NnVBY1pjMG40bHB5SW9wVFZRZUVWZFA0N2UvRmphdllUTkREdkRrVzRUMDZvR1VYVUQrOEJNSUhoQ0Y5Zm1YTzdXM2N6cU4xQnhRcFg1N1VNaTdweHU3ZTlYM0tMNDNyR0o3NGhHWG1RSy9sVjM3UnA0Qi9sOXRIUVNqc1E1WkZmd1BxcCtnVzg5Z3NBUEp6bW5CTy8vMG1ZUnFSbmg3cVdNQkV6Q1hPT2JRS09NRGIxWndQVUp2VmxGMGx3UWxRZld1bGNpc2g5S0wzZm9pQjJXOEpmc25xb3VVVlp0S29memFRT2hIRnIzYzFMMmhEUWltM0Q=
+>>>>>>> 0d1163b7e2e0d18ce8ab121ad81399be7699053d
     delayedInitialization: 0
     cameraDeviceModeSetting: -1
     maxSimultaneousImageTargets: 1
@@ -44,12 +48,14 @@ MonoBehaviour:
       ContainsMagnet: 0
   databaseLoad:
     dataSetsToLoad:
+<<<<<<< HEAD
     - PokemonCard
+=======
+>>>>>>> 0d1163b7e2e0d18ce8ab121ad81399be7699053d
     - Image_Targets_PokeAR
     - VuforiaMars_Images
     - VuforiaMars_VuMark
     dataSetsToActivate:
-    - PokemonCard
     - Image_Targets_PokeAR
     - VuforiaMars_Images
     - VuforiaMars_VuMark

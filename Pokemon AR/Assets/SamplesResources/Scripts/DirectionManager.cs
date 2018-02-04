@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class DirectionManager : MonoBehaviour {
-    public int direction;
+    public int direction = -1;
     public bool isPressed = false;
 	// Use this for initialization
     public void dir(int name)
