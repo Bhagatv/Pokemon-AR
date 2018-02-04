@@ -46,23 +46,23 @@ public class SwipeDetection : MonoBehaviour
 				deltaSwipe.Normalize ();
 			}
 
-			if (deltaSwipe.x > -0.5f && deltaSwipe.y > 0 && deltaSwipe.x < 0.5f && currentlySwiping) {
+			if (deltaSwipe.x > -0.5f && deltaSwipe.y > 0 && deltaSwipe.x < 0.5f && currentlySwiping && !hasBeenSwiped) {
 				Debug.Log ("up");
 				direction = 0;
 				hasBeenSwiped = true;
 
 			}
-			if (deltaSwipe.x > -0.5f && deltaSwipe.y < 0 && deltaSwipe.x < 0.5f && currentlySwiping) {
+			if (deltaSwipe.x > -0.5f && deltaSwipe.y < 0 && deltaSwipe.x < 0.5f && currentlySwiping && !hasBeenSwiped) {
 				Debug.Log ("down");
 				direction = 2;
 				hasBeenSwiped = true;
 			}
-			if (deltaSwipe.x < 0 && deltaSwipe.y > -0.5f && deltaSwipe.y < 0.5f && currentlySwiping) {
+			if (deltaSwipe.x < 0 && deltaSwipe.y > -0.5f && deltaSwipe.y < 0.5f && currentlySwiping && !hasBeenSwiped) {
 				Debug.Log ("left");
 				direction = 3;
 				hasBeenSwiped = true;
 			}
-			if (deltaSwipe.x > 0 && deltaSwipe.y > -0.5f && deltaSwipe.y < 0.5f && currentlySwiping) {
+			if (deltaSwipe.x > 0 && deltaSwipe.y > -0.5f && deltaSwipe.y < 0.5f && currentlySwiping && !hasBeenSwiped) {
 				Debug.Log ("right");
 				direction = 1;
 				hasBeenSwiped = true;
